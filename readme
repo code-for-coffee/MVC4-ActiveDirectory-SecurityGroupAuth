@@ -1,0 +1,11 @@
+Active Directory Security Group Authentication
+Last edited: 1/17/14 by code-for-coffee
+
+This is a sample MVC4 Project (Visual Studio 2010+) that demonstrates how to Authorize specific Active Directory Security Groups. 
+
+This is just sample code and not designed to be used in a production environment; it is available to easily display the concept of how to accomplish this goal.
+
+Please note specifics in:
+* web.config (LDAP connection string and Active Directory membership)
+* Controllers/HomeController.cs (displays the "[AuthorizeAD(Groups = 'SecurityGroup'") usage).
+* Filters/AuthorizeADAttribute.cs (displays the implementation of "[AuthorizeAD]").
